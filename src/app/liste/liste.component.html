@@ -1,0 +1,16 @@
+<div class="container">
+  <div>
+    <ul>
+      <li *ngFor="let film of films">
+        <a (click)="showFilm(film)" routerLink="/film/{{film.title }}">{{film.title}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <app-film [film]=choosenFilm></app-film>
+  </div>
+
+</div>
+
+
